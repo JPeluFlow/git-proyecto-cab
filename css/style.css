@@ -1,8 +1,25 @@
 /* Pagina de inicio*/
-header {
-    text-align: center;
+.header {
+    display: flex;
+    position: sticky;
+    top: 5px;
+    align-items: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: darkgrey;}
+    background-color: darkgrey;
+    border: 1px solid black;}
+
+.titulo{
+    display: flex;
+    margin-left: 10px;
+    }
+
+.escudo{
+margin-left: 250px;
+margin-right: 250px;
+    width: 100px;
+    height: 100px;}
+
+
 #historia {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: justify;
@@ -20,3 +37,5 @@ footer {
     text-align: justify;
     background-color: darkgrey}
 
+body{background-color: beige;}
+/*seccion futbol*/ 
