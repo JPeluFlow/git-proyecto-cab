@@ -82,7 +82,7 @@ body {
     text-align: center;
 }
 
-#carouselExampleIndicators{
+#carouselExampleIndicators {
     justify-content: center;
 }
 
@@ -144,7 +144,10 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
-.logo-voley{padding-bottom: 20px;}
+
+.logo-voley {
+    padding-bottom: 20px;
+}
 
 #voley-masculino {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -168,11 +171,15 @@ body {
 }
 
 /*pagina de patinaje*/
+@media only screen and (min-width:500px) and (max-width:2000px) {
+#menu-patinaje {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
 
-#menu-patinaje{ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;}
-
-.logo-patinaje{padding-bottom: 20px;}
+.logo-patinaje {
+    padding-bottom: 20px;
+}
 
 #patinaje-masculino {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -195,3 +202,33 @@ body {
     background-color: #a0a0a0;
 }
 
+/* pagina de galeria */
+
+
+    #carrusel-futbol {
+        display: flex;
+        padding: 50px;
+        background-color: black;
+        order: 0;
+    }
+
+    #carrusel-basquet {
+        padding: 50px;
+        background-color: black;
+    }
+
+    #carrusel-voley {
+        padding: 50px;
+        background-color: black;
+    }
+
+    .header-galeria {
+        display: flex;
+        padding: 5px;
+        top: 5px;
+        align-items: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background-color: darkgrey;
+        border: 5px inset black
+    }
+}
