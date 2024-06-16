@@ -1,166 +1,217 @@
-@media only screen and (min-width: 500px) and (max-width: 2000px) {
-  /* Pagina de inicio*/
-.bebas-neue-regular {
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
 
-body {
-  margin: 0%;
-  background-color: white;
-  font-family: "Bebas Neue", sans-serif;
-}
-/* Menu*/
-.menu {
-  text-align: center;
-  padding-bottom:5px;
-}
+  body {
+    margin: 0%;
+    background-color: black;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  /* header */
+  .escudo {
+    margin-left: 1rem;
+    width: 4rem;
+    height: 4rem;
+  }
+  .imagen-pagina-principal {
+    width: 100%
+  }
 
-#escudo{height: 100px;
-width: 100px;}
-
-/* header */
-header {
+  /* Menu*/
+  #menu {
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+  }
+.botones-nav{ 
+  gap: 1rem;
+  line-break: none;
+  justify-content: center;
   display: flex;
-  position: sticky;
-  top: 0px;
-  left: 0px;
-  margin-left: 0px;
-  align-items: center;
-  background-color: black;
-  color: white;
+  padding: 1rem;
 }
-
-.titulo {
-  margin-left: 5px;
-}
-
+.boton-menu a{
+  color: black;
+  text-decoration:dashed;}
+  
 .escudo {
-  margin-left: 5px;
-  width: 70px;
-  height: 70px;
-}
-
-.botones {
-  margin-left: 500px;
-  font-size: 30px;
-}
-
-.imagen-pagina-principal {
-  width: 100%
-}
-
-.pagina-principal {
-  background-color: black;
-  color: white;
-  margin: 0px;
-  padding: 50px;
-  font-size: large;
-}
-
-footer {
-  text-align: center;
-  background-color: black;
-  color: white;
-}
-
-#ubicacion {
-  text-align: center;
-}
-
-/* historia*/
-
-.historia {
-  background-color:black;
-  color: beige;
-  padding: 10px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 450px);
-}
-
-#historia-del-club {
-  grid-column: 1/3;
-
-}
-
-#primeros-anios {
-  grid-column: 1/3;
+    height: 100px;
+    width: 100px;
+  }
 
 
-}
-
-#visitas {
-  grid-column: 1/3;
-
-}
-
-#actualidad {
-  grid-column: 1/3;
-}
-
-#imagen-placa-del-club {
-  width: 450px;
-  height: 300px;
-  margin: 10px;
-  grid-column: 3/4;
-  grid-row: 1/2;
-}
-
-#imagen-vieja-sede {
-  width: 450px;
-  height: 300px;
-  margin: 10px;
-  grid-column: 3/4;
-  grid-row: 2/3;
-}
-
-#imagen-primer-plantel {
-  width: 450px;
-  height: 300px;
-  margin: 10px;
-  grid-column: 3/4;
-  grid-row: 3/4;
-}
-
-#imagen-campeon-federal {
-  width: 450px;
-  height: 300px;
-  margin: 10px;
-  grid-column: 3/4;
-grid-row:4/5 ;}
-
-/*pagina de patinaje (apta para mobile)*/
-
-
-  /* pagina de galeria (apta para mobile)*/
-  #carrusel-futbol {
+ /* footer */
+  footer div {
     display: flex;
-    padding: 50px;
-    background-color: black;
-    order: 0;
-  }
-
-  #carrusel-basquet {
-    padding: 50px;
-    background-color: black;
-  }
-
-  #carrusel-voley {
-    padding: 50px;
-    background-color: black;
-  }
-
-  .header-galeria {
-    display: flex;
-    padding: 5px;
-    top: 5px;
+    justify-content: center;
     align-items: center;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-    background-color: darkgrey;
-    border: 5px inset black;
+    color: white;
+    gap: 1rem;
+    padding: 1rem;
   }
+  footer div img{ 
+  height:2rem;
+  width:2rem;}
+  
+  /* Pagina de inicio*/ 
+
+  .noticias {
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-areas:
+      'noticia-uno noticia-dos noticia-tres'
+      'noticia-cuatro noticia-cinco noticia-seis';
+    gap: 2rem;
+    padding:0 10rem 10rem 10rem;
+    background-color: black;
+   
+  }
+  @media only screen and (min-width:320px) and (max-width:1023px) {
+    .noticias {
+      display: grid;
+      grid-template-columns:1fr 1fr 1fr;
+      grid-template-areas:
+        'noticia-uno noticia-dos noticia-tres'
+        'noticia-cuatro noticia-cinco noticia-seis';
+      gap: 2rem;
+      padding:0 1rem 1rem 1rem;
+      background-color: black;
+     
+    }
+    .publicidades {
+      display: grid;
+      grid-template-areas:
+        'p1 p2 p3 p4 p5'
+        'p6 p7 p8 p19 p10'
+        'p11 p12 p13 p14 p15';
+      gap: 1rem;
+      padding: 1rem 1rem 10rem 1rem ;
+      background-color: black;
+    }
+  }
+
+  .titulo-noticias {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10rem;
+  }
+
+  #ubicacion div .sede-del-club {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    'img-sede-del-club google-maps' ;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    gap: 1rem;
+  }
+ 
+
+  #ubicacion div .titulo-ubicacion {
+    text-align: center;
+    padding: 10rem ;
+  }
+
+  .publicidades {
+    display: grid;
+    grid-template-areas:
+      'p1 p2 p3 p4 p5'
+      'p6 p7 p8 p19 p10'
+      'p11 p12 p13 p14 p15';
+    gap: 2rem;
+    padding: 2rem 2rem 10rem 2rem ;
+    background-color: black;
+  }
+
+  .publicidades div img {
+    height: 100%;
+    width: 100%;
+  }
+
+.titulo-publicidad {
+    text-align: center;
+    padding: 10rem;
+    background-color: black;
+    color: white;
+  }
+  #ubicacion div img{height:100%;
+    width: 100%;}
+  /* historia*/
+#historia{display: grid;
+  grid-template-columns: 3fr 2fr;
+grid-template-areas:
+'historia-del-club img-placa'
+'primeros-anios img-vieja-sede'
+'visitas img-primer-plantel'
+'actualidad img-campeon-federal';
 }
 
-/*# sourceMappingURL=style.css.map */
+#historia div{padding:5rem}
+
+#historia div img{
+  align-items: center;
+  height: 100%;
+  width: 100%;} 
+
+.historia-del-club{ background-color: black;}
+.img-placa{background-color: black;}
+.visitas{background-color: black;}
+.img-primer-plantel{background-color: black;}
+
+/* deportes */
+#futbol{background-color: black;
+text-align: center;
+color: white;
+padding: 5rem;}
+
+.nav-deportes{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-areas:
+'escudo accordion accordion';
+padding: 3rem;
+}
+
+#futbol div .escudo-deportes{
+  align-items: center;
+height: 150%;
+width: 150%;}
+
+#basquet{
+  text-align: center;
+  padding: 5rem;
+}
+#voley{
+  background-color: black;
+  text-align: center;
+  color: white;
+  padding: 5rem;
+
+}
+#patinaje{text-align: center;
+  padding: 5rem;}
+
+
+  /* Galeria */
+  #galeria{
+    background-color: black;
+    color: white;
+    display: grid;
+    padding: 4rem;
+    grid-template-areas:
+    'plantel-futbol-masculino plantel-futbol-reserva plantel-futbol-femenino'
+    'plantel-futbol-femenino-sub17 plantel-basquet-masculino plantel-basquet-femenino'
+    'plantel-basquet-infantil plantel-voley plantel-voley-femenino'
+    'plantel-voley-maxi plantel-patinaje plantel-patinaje-infantil';
+  }
+  #galeria div {padding: 1rem;
+  text-align: center;
+  width: 100%;
+  height: 100%;}
+    
+  /* Contacto*/
+
+#formulario{padding: 5rem;}
+.titulo-contacto{text-align: center;
+padding: 2rem;}
+  /*# sourceMappingURL=style.css.map */

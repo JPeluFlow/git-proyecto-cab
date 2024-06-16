@@ -2,78 +2,204 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Club Atletico Baradero</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Club Atletico Baradero</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 
 <body>
-    <!--encabezado-->
-    <header>
-        <img class="escudo" src="./img/escudo.png" alt="imagen-del-escudo-del-club-atletico-baradero">
-        <h1 class="titulo"> <strong>Club Atletico Baradero</strong></h1>
-        <nav class="botones">
-            <a href="./index.html">inicio</a>
-            <a href="./pages/historia.html">historia</a>
-            <a href="./pages/deportes.html">deportes</a>
-            <a href="./pages/galeria.html">galeria</a>
-            <a href="./pages/contacto.html">contacto</a>
-        </nav>
-    </header>
+  <!--encabezado-->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark">
+      <div class="container-fluid">
+        <img class="escudo" src="./img/escudo.png" alt="imagen del escudo del club atletico baradero">
+        <a class="navbar-brand text-light" href="../index.html">Club Atletico Baradero</a>
+        <button class="navbar-toggler bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link text-light" href="./pages/historia.html">Historia</a>
+            <a class="nav-link text-light" href="./pages/deportes.html">Deportes</a>
+            <a class="nav-link text-light" href="./pages/galeria.html">Galeria</a>
+            <a class="nav-link text-light" href="./pages/contacto.html">Contacto</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
 
 
-    <!-- contenido-->
+  <!-- contenido-->
 
-    <main>
-    
-        <section>
-            <img class="imagen-pagina-principal" src="./img/plantel-futbol-masculino.jpg"
-                alt="plantel-de-primera-division-del-club-atletico-baradero">
-                <p class="pagina-principal">El Club Atlético Baradero es una entidad deportiva argentina con sede la ciudad de Baradero,
-                    provincia de
-                    Buenos Aires. Fue fundado el 3 de abril de 1905 con la finalidad de practicar fútbol en forma
-                    organizada.
-                    Sus fundadores fueron jóvenes que se mancomunaron para llevar a la realidad un sueño que tejieron en
-                    un
-                    banco de la Plaza Mitre en Baradero.</p>
-        </section>
+  <main>
 
-        <section id="ubicacion">
-            <h3>¿donde encontrarnos?</h3>
-            <img src="./img/sede-del-club.jpg" alt="">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6630.505391117299!2d-59.50751835452877!3d-33.80579140608033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95ba37b268f26179%3A0x50f55f7121baf2ef!2sClub%20Atl%C3%A9tico%20Baradero%20-%20Estadio%20Carlos%20Asali!5e0!3m2!1ses-419!2sar!4v1712611622332!5m2!1ses-419!2sar"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
+    <section id="imagen-pagina-principal">
+      <img class="imagen-pagina-principal" src="./img/plantel-futbol-masculino.jpg"
+        alt="plantel de primera division del club atletico baradero">
+    </section>
 
 
+    <section id="noticias">
+      <div class="titulo-noticias">
+        <h1>Ultimas Noticias</h2>
+      </div>
+      <div class="noticias">
+        <div class="noticia-uno">
+          <div class="card">
+            <img src="./img/noticia-aniversario.JPG" class="card-img-top" alt="imagen del aniversario del club atletico baradero">
+            <div class="card-body">
+              <h5 class="card-title">Feliz Aniversario Carlos Asali</h5>
+              <a href="https://www.instagram.com/p/C8DQwieu6iM/?img_index=1" class="btn btn-primary">Más Información</a>
+            </div>
+          </div>
+        </div>
+        <div class="noticia-dos">
+          <div class="card">
+            <img src="./img/noticia-proximo-partido.JPG" class="card-img-top" alt="imagen de la proxima fecha del club atletico baradero en el torneo preparacion 2024 y sus horarios">
+            <div class="card-body">
+              <h5 class="card-title">Proxima Fecha - Torneo Preparacion</h5>
+              <a href="https://www.instagram.com/p/C77tSlIOR5B/?img_index=1" class="btn btn-primary">Más Información</a>
+            </div>
+          </div>
+        </div>
+        <div class="noticia-tres">
+          <div class="card">
+            <img src="./img/noticia-fecha1.JPG" class="card-img-top" alt="imagen de la primera fecha del torneo preparacion 2024 y sus horarios">
+            <div class="card-body">
+              <h5 class="card-title">Comienza el Torneo Preparacion</h5>
+              <a href="https://www.instagram.com/p/C7p03iwuClO/" class="btn btn-primary">Más Información</a>
+            </div>
+          </div>
+        </div>
+        <div class="noticia-cuatro">
+          <div class="card">
+            <img src="./img/fixture-torneo-preparacion.JPG" class="card-img-top" alt="imagen del fixture del torneo preparacion 2024">
+            <div class="card-body">
+              <h5 class="card-title">Fixture Torneo Preparacion</h5>
+              <a href="https://www.instagram.com/p/C7h3CCQOrp8/" class="btn btn-primary">Más Información</a>
+            </div>
+          </div>
+        </div>
+        <div class="noticia-cinco">
+          <div class="card">
+            <img src="./img/nuevo-cuerpo-tecnico.JPG" class="card-img-top" alt="imagen del nuevo cuerpo tecnico de futbol para el 2024 , del club atletico baradero ">
+            <div class="card-body">
+              <h5 class="card-title">Nuevo Cuerpo Tecnico</h5>
+              <a href="https://www.instagram.com/p/C7fRNrmuFET/?img_index=1" class="btn btn-primary">Más Información</a>
+            </div>
+          </div>
+        </div>
+        <div class="noticia-seis">
+          <div class="card">
+            <img src="./img/primera-division-femenina-campeon.JPG" class="card-img-top" alt="imagen del plantel de la primera division femenina del club atletico baradero consagrandose campeon del torneo preparacion 2024">
+            <div class="card-body">
+              <h5 class="card-title">Otra estrella mas</h5>
+              <a href="https://www.instagram.com/p/C7aNJ1LuGyV/?img_index=1" class="btn btn-primary">Más Información</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
+    <section id="ubicacion" class="bg-light">
+      <div class="ubicacion">
+        <div class="titulo-ubicacion">
+          <h2>¿Donde Encontrarnos?</h3>
+        </div>
+        <div class="sede-del-club">
+          <img class="img-sede-del-club" src="./img/sede-del-club.jpg" alt="imagen de la sede del club atletico baradero">
+          <iframe class="google-maps"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6630.663492892888!2d-59.50610599999996!3d-33.803751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95ba37b34b92384b%3A0xd6b8fcb4ea3071e4!2sClub%20Atl%C3%A9tico%20Baradero!5e0!3m2!1ses-419!2sar!4v1718465826661!5m2!1ses-419!2sar"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
 
 
+    <section id="publicidad">
+      <div class="titulo-publicidad">
+        <h2>Nuestros Sponsors 2024</h2>
+      </div>
+      <div class="publicidades">
+        <div class="p1">
+          <img src="./img/publicidad-balbarani.jpeg" alt="publicidad heladeria balbarani">
+        </div>
+        <div class="p2">
+          <img src="./img/publicidad-bernardi.jpeg" alt="publicidad transporte bernardi">
+        </div>
+        <div class="p3">
+          <img src="./img/publicidad-daubian.jpeg" alt="publicidad farmacia daubian">
+        </div>
+        <div class="p4">
+          <img src="./img/publicidad-disalvo.jpeg" alt="publicidad veterinaria disalvo">
+        </div>
+        <div class="p5">
+          <img src="./img/publicidad-empanadas-de-carlitos.jpeg" alt="publicidad empanadas de carlitos">
+        </div>
+        <div class="p6">
+          <img src="./img/publicidad-gato-negro.jpeg" alt="publicidad bar el gato negro">
+        </div>
+        <div class="p7">
+          <img src="./img/publicidad-hotel.jpeg" alt="publicad hotel boutique">
+        </div>
+        <div class="p8">
+          <img src="./img/publicidad-laboratorio.jpeg" alt="publicidad laboratorio de analisis clinicos mid">
+        </div>
+        <div class="p9">
+          <img src="./img/publicidad-laverap.jpeg" alt="publicidad laverap">
+        </div>
+        <div class="p10">
+          <img src="./img/publicidad-los-pietros.jpeg" alt="publicidad maxikiosco los pietros">
+        </div>
+        <div class="p11">
+          <img src="./img/publicidad-metabasa.jpeg" alt="publicidad empresa de obras y servicios, metabasa">
+        </div>
+        <div class="p12">
+          <img src="./img/publicidad-mister-sandwich.jpeg" alt="publicidad mister sandwich">
+        </div>
+        <div class="p13">
+          <img src="./img/publicidad-pasquali.jpeg" alt="publicidad empresa pasquali">
+        </div>
+        <div class="p14">
+          <img src="./img/publicidad-rbm.jpeg" alt="publicidad rbm materiales">
+        </div>
+        <div class="p15">
+          <img src="./img/publicidad-sposito.jpeg" alt="publicidad empresa sposito">
+        </div>
+      </div>
+    </section>
 
 
-    </main>
+  </main>
 
-    <!--pie de pagina-->
-    <footer>
-            <h3>
-                Seguinos en
-            </h3>
-            <button><a class="boton-de-instagram"
-                    href="https://www.instagram.com/clubatleticobaradero/">instagram</a></button>
-            <button><a class="boton-de-facebook"
-                    href="https://www.facebook.com/ClubAtleticoBaradero">facebook</a></button>
-    </footer>
+  <footer class="bg-dark">
+    <div class="footer">
+      <div class="titulo-footer">
+        <img class="escudo" src="./img/escudo.png" alt="imagen del escudo del club-atletico baradero">
+        <h3>Club Atletico Baradero</h3>
+      </div>
+      <div class="botones-footer">
+        <a class="boton-de-instagram" href="https://www.instagram.com/clubatleticobaradero/"><img
+            src="./img/logo-instagram.png" alt=""></a>
+        <a class="boton-de-facebook" href="https://www.facebook.com/ClubAtleticoBaradero"><img
+            src="./img/logo-facebook.png" alt=""></a>
+        <a class="boton-wpp" href=""><img src="./img/logo-whatsapp.png" alt=""></a>
+      </div>
+    </div>
+  </footer>
 
 
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

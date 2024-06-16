@@ -1,80 +1,169 @@
-/* Pagina de inicio*/
-body{
-    background-color: white;
-  }
-  header {
+  /* Pagina de inicio*/
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  margin: 0%;
+  background-color: white;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+/* Menu*/
+.menu {
+  text-align: center;
+  padding-bottom:5px;
+}
+
+#escudo{height: 100px;
+width: 100px;}
+
+/* header */
+header {
+  display: flex;
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  margin-left: 0px;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+.titulo {
+  margin-left: 5px;
+}
+
+.escudo {
+  margin-left: 5px;
+  width: 70px;
+  height: 70px;
+}
+
+.botones {
+  margin-left: 500px;
+  font-size: 30px;
+}
+
+.imagen-pagina-principal {
+  width: 100%
+}
+
+.pagina-principal {
+  background-color: black;
+  color: white;
+  margin: 0px;
+  padding: 50px;
+  font-size: large;
+}
+
+footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+#noticias{
+  display: grid;
+}
+
+#ubicacion {
+  text-align: center;
+}
+
+/* historia*/
+
+.historia {
+  background-color:black;
+  color: beige;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 450px);
+}
+
+#historia-del-club {
+  grid-column: 1/3;
+
+}
+
+#primeros-anios {
+  grid-column: 1/3;
+
+
+}
+
+#visitas {
+  grid-column: 1/3;
+
+}
+
+#actualidad {
+  grid-column: 1/3;
+}
+
+#imagen-placa-del-club {
+  width: 450px;
+  height: 300px;
+  margin: 10px;
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+#imagen-vieja-sede {
+  width: 450px;
+  height: 300px;
+  margin: 10px;
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+#imagen-primer-plantel {
+  width: 450px;
+  height: 300px;
+  margin: 10px;
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+
+#imagen-campeon-federal {
+  width: 450px;
+  height: 300px;
+  margin: 10px;
+  grid-column: 3/4;
+grid-row:4/5 ;}
+
+
+
+  #carrusel-futbol {
     display: flex;
-    position: sticky;
+    padding: 50px;
+    background-color: black;
+    order: 0;
+  }
+
+  #carrusel-basquet {
+    padding: 50px;
+    background-color: black;
+  }
+
+  #carrusel-voley {
+    padding: 50px;
+    background-color: black;
+  }
+
+  .header-galeria {
+    display: flex;
+    padding: 5px;
+    top: 5px;
     align-items: center;
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-    background-color: black;
-    border: 2px solid gray;
-    color: white;
+    background-color: darkgrey;
+    border: 5px inset black;
   }
-  .escudo {
-    width: 70px;
-    height: 70px;
-  }
-  .botones{
-    margin-left: 500px;
-    text-decoration: none;
-  }
-  
-  #historia {
-    display: grid;
-    padding: 10px;
-    grid-template-rows: 500px 1fr;
-    grid-template-columns: 1fr 1fr;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-    text-align: justify;
-    border: 1px solid black;
-    background-color: #a0a0a0;
-  }
-  
-  #ubicacion {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-    text-align: center;
-    border: 1px solid black;
-    padding: 10px;
-    margin: 10px;
-    background-color: #a0a0a0;
-  }
-  
-  footer {
-    text-align: center;
-    margin: 20px;
-    padding: 10px;
-    border: 1px solid black;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-    background-color: #a0a0a0;
-  }
-  /*pagina de patinaje (apta para mobile)*/
-  @media only screen and (min-width: 500px) and (max-width: 2000px) {
-    /* pagina de galeria (apta para mobile)*/
-    #carrusel-futbol {
-      display: flex;
-      padding: 50px;
-      background-color: black;
-      order: 0;
-    }
-    #carrusel-basquet {
-      padding: 50px;
-      background-color: black;
-    }
-    #carrusel-voley {
-      padding: 50px;
-      background-color: black;
-    }
-    .header-galeria {
-      display: flex;
-      padding: 5px;
-      top: 5px;
-      align-items: center;
-      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-      background-color: darkgrey;
-      border: 5px inset black;
-    }
-  }
-  
-  /*# sourceMappingURL=style.css.map */
+
+
+/*# sourceMappingURL=style.css.map */
   
